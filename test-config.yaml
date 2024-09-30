@@ -118,7 +118,7 @@ model_list:
 
 litellm_settings:
   #vertex_project: "" # Your Project ID
-  vertex_location: "asia-northeast1" # proj location
+  vertex_location: "us-central1" # proj location
   drop_params: True
   #add_function_to_prompt: True
   max_budget: 100 
