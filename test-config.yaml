@@ -1,31 +1,7 @@
 model_list:
   - model_name: gpt-3.5-turbo
     litellm_params: 
-      model: vertex_ai/gemini-1.5-flash-001
-      safety_settings:
-      - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
-      - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
-      - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
-      - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
-  - model_name: gemini-pro
-    litellm_params: 
-      model: vertex_ai/gemini-1.5-flash-001
-      safety_settings:
-      - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
-      - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
-      - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
-      - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
-  - model_name: gemini-pro-vision
-    litellm_params: 
-      model: vertex_ai/gemini-pro-vision
+      model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_ONLY_HIGH
@@ -37,7 +13,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
   - model_name: gemini-1.5-pro
     litellm_params: 
-      model: vertex_ai/gemini-1.5-pro-001
+      model: vertex_ai/gemini-1.5-pro-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_ONLY_HIGH
@@ -49,7 +25,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
   - model_name: gemini-1.5-pro-latest
     litellm_params: 
-      model: vertex_ai/gemini-1.5-pro-001
+      model: vertex_ai/gemini-1.5-pro-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_ONLY_HIGH
@@ -61,7 +37,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
   - model_name: gemini-1.5-pro-json
     litellm_params: 
-      model: vertex_ai/gemini-1.5-pro-001
+      model: vertex_ai/gemini-1.5-pro-002
       response_mime_type: application/json
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
@@ -74,7 +50,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
   - model_name: gemini-1.5-flash
     litellm_params: 
-      model: vertex_ai/gemini-1.5-flash-001
+      model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_ONLY_HIGH
@@ -86,7 +62,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
   - model_name: gemini-1.5-flash-latest
     litellm_params: 
-      model: vertex_ai/gemini-1.5-flash-001
+      model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_ONLY_HIGH
@@ -144,7 +120,7 @@ litellm_settings:
   #vertex_project: "" # Your Project ID
   vertex_location: "asia-northeast1" # proj location
   drop_params: True
-  add_function_to_prompt: True
+  #add_function_to_prompt: True
   max_budget: 100 
   budget_duration: 30d
   num_retries: 1
