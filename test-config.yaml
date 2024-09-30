@@ -1,5 +1,5 @@
 model_list:
-  - model_name: gpt-3.5-turbo
+  - model_name: gpt-4o-mini
     litellm_params: 
       model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
@@ -11,7 +11,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
         threshold: BLOCK_ONLY_HIGH
-  - model_name: gemini-1.5-pro
+  - model_name: gemini-1.5-pro-latest
     litellm_params: 
       model: vertex_ai/gemini-1.5-pro-002
       safety_settings:
@@ -48,7 +48,7 @@ model_list:
         threshold: BLOCK_ONLY_HIGH
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
         threshold: BLOCK_ONLY_HIGH
-  - model_name: gemini-1.5-flash
+  - model_name: gemini-1.5-flash-latest
     litellm_params: 
       model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
