@@ -6,7 +6,7 @@ WORKDIR /app
 
 
 # Copy the configuration file into the container at /app
-COPY litellm_config.yaml .
+COPY test-config.yaml .
 
 # Make sure your entrypoint.sh is executable
 RUN chmod +x entrypoint.sh
