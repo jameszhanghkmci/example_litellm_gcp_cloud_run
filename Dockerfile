@@ -14,4 +14,4 @@ RUN chmod +x entrypoint.sh
 # Expose the necessary port
 EXPOSE 4000/tcp
 
-CMD ["--port", "4000", "--config", "litellm_config.yaml"]
+CMD ["--port", "4000", "--config", "test-config.yaml"]
