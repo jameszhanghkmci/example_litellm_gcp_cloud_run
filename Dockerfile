@@ -8,9 +8,6 @@ WORKDIR /app
 # Copy the configuration file into the container at /app
 COPY test-config.yaml .
 
-# Make sure your entrypoint.sh is executable
-RUN chmod +x entrypoint.sh
-
 # Expose the necessary port
 EXPOSE 4000/tcp
 
