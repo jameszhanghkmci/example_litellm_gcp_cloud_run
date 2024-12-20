@@ -1,4 +1,16 @@
 model_list:
+  - model_name: gemini-2.0-flash-thinking-exp-1219
+    litellm_params: 
+      model: vertex_ai/gemini-2.0-flash-thinking-exp-1219
+      safety_settings:
+      - category: HARM_CATEGORY_HARASSMENT
+        threshold: BLOCK_NONE
+      - category: HARM_CATEGORY_HATE_SPEECH
+        threshold: BLOCK_NONE
+      - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+        threshold: BLOCK_NONE
+      - category: HARM_CATEGORY_DANGEROUS_CONTENT
+        threshold: BLOCK_NONE
   - model_name: gemini-2.0-flash-exp
     litellm_params: 
       model: vertex_ai/gemini-2.0-flash-exp
@@ -28,74 +40,74 @@ model_list:
       model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
   - model_name: gemini-1.5-pro-latest
     litellm_params: 
       model: vertex_ai/gemini-1.5-pro-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
   - model_name: gemini-1.5-pro-002
     litellm_params: 
       model: vertex_ai/gemini-1.5-pro-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
   - model_name: gemini-1.5-pro-json
     litellm_params: 
       model: vertex_ai/gemini-1.5-pro-002
       response_mime_type: application/json
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
   - model_name: gemini-1.5-flash-latest
     litellm_params: 
       model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
   - model_name: gemini-1.5-flash-002
     litellm_params: 
       model: vertex_ai/gemini-1.5-flash-002
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_HATE_SPEECH
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
-        threshold: BLOCK_ONLY_HIGH
+        threshold: BLOCK_NONE
   # - model_name: gpt-3.5-turbo
   #   litellm_params:
   #     model: azure/chatgpt-v-2
