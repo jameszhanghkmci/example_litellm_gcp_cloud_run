@@ -75,6 +75,7 @@ model_list:
     litellm_params: 
       model: vertex_ai/gemini-1.5-pro-002
       tool_choice: required
+      response_mime_type: "application/json"
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_NONE
