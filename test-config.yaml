@@ -1,7 +1,19 @@
 model_list:
-  - model_name: gemini-2.0-flash-thinking-exp-1219
+  - model_name: gemini-2.0-flash-thinking-exp
     litellm_params: 
-      model: vertex_ai/gemini-2.0-flash-thinking-exp-1219
+      model: vertex_ai/gemini-2.0-flash-thinking-exp-01-21
+      safety_settings:
+      - category: HARM_CATEGORY_HARASSMENT
+        threshold: BLOCK_NONE
+      - category: HARM_CATEGORY_HATE_SPEECH
+        threshold: BLOCK_NONE
+      - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+        threshold: BLOCK_NONE
+      - category: HARM_CATEGORY_DANGEROUS_CONTENT
+        threshold: BLOCK_NONE
+  - model_name: gemini-2.0-flash
+    litellm_params: 
+      model: vertex_ai/gemini-2.0-flash-001
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_NONE
@@ -85,10 +97,9 @@ model_list:
         threshold: BLOCK_NONE
       - category: HARM_CATEGORY_DANGEROUS_CONTENT
         threshold: BLOCK_NONE
-  - model_name: gemini-exp-1206-json
+  - model_name: gemini-2.0-pro-exp
     litellm_params: 
-      model: vertex_ai/gemini-exp-1206
-      tool_choice: required
+      model: vertex_ai/gemini-2.0-pro-exp-02-05
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_NONE
