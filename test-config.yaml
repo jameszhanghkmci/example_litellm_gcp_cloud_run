@@ -37,7 +37,7 @@ model_list:
         threshold: BLOCK_NONE
   - model_name: gemini-2.0-flash-lite
     litellm_params: 
-      model: vertex_ai/gemini-2.0-flash-lite-preview-02-05
+      model: vertex_ai/gemini-2.0-flash-lite-001
       safety_settings:
       - category: HARM_CATEGORY_HARASSMENT
         threshold: BLOCK_NONE
@@ -191,7 +191,7 @@ model_list:
 
 litellm_settings:
   #vertex_project: "" # Your Project ID
-  vertex_location: "us-central1" # proj location
+  #vertex_location: "us-central1" # proj location
   drop_params: True
   #add_function_to_prompt: True
   max_budget: 100 
